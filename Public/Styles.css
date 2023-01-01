@@ -1,0 +1,145 @@
+.first{
+  padding: 3% 15% 7%;
+}
+#intro{
+  background-color: #c1a1d3;
+  color: #fff3e6;
+}
+/* #intro{
+color: #fff3e6;
+background: url("yog.jpg");
+background-repeat: no-repeat;
+position: relative;
+    background-size:100% 70vh;
+  min-height: 70vh;
+  C:\Users\pbatr\OneDrive\Desktop\YogaGuru\Public\yog.jpg
+  Public\yog.jpg
+} */
+.title-img{
+  width: 80%;
+  border-radius: 25px;
+  height: 80%
+}
+#middle{
+/* background: url("../../images/5417730.jpg"); */
+
+  padding: 50px;
+  /* text-align: center; */
+
+}
+h1,h3{
+  font-family: 'Montserrat';
+}
+
+#bottom{
+  background-color: #eff7e1;
+  padding: 50px;
+  text-align: center;
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navcolor{
+  background-color: #EEEEEE;
+}
+.navbar-brand{
+  font-size: 2.5em;
+
+}
+.nav-item{
+  padding: 0 18px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  color: #787A91
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.big-heading{
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.smalltext{
+    font-family: 'Ubuntu';
+}
+.row{
+  margin-right: auto;
+}
+.pricing-column {
+    padding: 3% 2%;
+}
+#bottom-heading{
+  text-align: center;
+  font-size: 3rem;
+  color: #1f441e;
+}
+.card-body{
+  text-align: center;
+}
+#footer{
+  text-align: center;
+  background-color: #fff;
+  padding: 7% 15%;
+}
+.footer{
+	text-align: center;
+  color: #F2EDD7;
+	bottom: 0;
+	width: 100%;
+	background-color: #3A6351;
+  padding: 50px 0 40px 0;
+  line-height: 1.6;
+}
+.icons{
+  padding: 1% 2%;
+}
+.fa-icon{
+  padding: 0 1%;
+  text-decoration: none;
+  color: black;
+}
+.fa-icon:hover{
+  text-decoration: none;
+  color: #8f8f8f;
+}
+p{
+  color: #8f8f8f;
+}
+h3{
+  padding: 5px;
+}
+.frm{
+  background: #F2EDD7;
+text-align: center;
+}
+.reg{
+  display: inline-block;
+}
+.dis{
+  height: 90vh;
+  background: url("../../images/int.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size:100% 100%;
+  padding: 5%;
+}
+.dis-err{
+  height: 90vh;
+  background: url("../../images/4503796.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size:100% 100%;
+  padding: 5%;
+}

@@ -1,0 +1,121 @@
+<html>
+<head>
+	<title>Registration Form</title>
+<!-- charset="utf-8" to display correctly special characters -->
+	<meta charset="utf-8">
+  <!-- Css stylesheets including bootstrap -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <link rel="stylesheet" href="Styles.css">
+
+</head>
+<body class="frm">
+
+
+
+<!-- width: 500px;height: 500px gives you the size of the form -->
+<!-- style="border: solid;" gives you a nice border in the form -->
+	<form class="reg" action="/join/submit" method="post" style="background-color: #2F4F4F;width: 500px;height: 700px;border:solid;">
+<!-- h1,h2...h6 indicates the title and its size -->
+<!-- style="width: 70px; height: 70px" align="right" sets the size of the image to the right side of the form -->
+<!-- TITLE INFO -->
+
+		<h1 align="center" style="color: #FFFFF0">Registration Form</h1>
+<!-- <br> line break in text -->
+		<br>
+<!-- style="border: solid 1px" gives a thinner border to the text box -->
+<!-- style="width: 400px" sets the width of the text box -->
+<!-- style="margin-left: 10px" gives margin-->
+<!-- <span style="color: #FF6347">*</span> gives color only to the selected text -->
+<!-- NAME INFO -->
+		<label for="name" style="margin-left: 10px; color: #FFFFF0" >Name: <span style="color: #FF6347">*</span></label><br>
+		<input id="first-name" type="text" name="name" placeholder="Your Name" required style="border: solid 1px;margin-left:10px;width: 400px">
+		<br>
+<!-- <br> line break in text -->
+<!-- style="margin-left: 10px" gives margin in the form of 10px -->
+
+<!-- GENDER INFO -->
+  <label for="Gender" style="margin-left: 10px;color: #FFFFF0">Your Gender: <span style="color: #FF6347">*</span></label>
+		<label for="male" style="margin-left: 10px;color: #FFFFF0">Male:</label>
+		<input id="male" type="radio" name="genderchoice" value="male">
+		<label for="female" style="margin-left: 10px;color: #FFFFF0">Female:</label>
+		<input id="female" type="radio" name="genderchoice" value="female">
+		<label for="other" style="margin-left: 10px;color: #FFFFF0">Other:</label>
+		<input id="other" type="radio" name="genderchoice" value="other">
+		<br>
+
+    <br>
+    <label for="age" style="margin-left: 10px;color: #FFFFF0">Age: <span style="color: #FF6347">*</span></label>
+    <input id="age" type="number" name="age" min="18" max="65" placeholder="Your age" style="border: solid 1px;margin-left:10px;width: 400px" required>
+    <br>
+
+
+		<br>
+<!-- DATE OF BIRTH INFO -->
+		<legend style="color: #FFFFF0; margin-left: 10px">Date of Joining: <span style="color: #FF6347">*</span></legend>
+
+<input type="date" name="date" id="theDate" />
+<script type="text/javascript">
+	theDate.min = new Date().toISOString().split("T")[0];
+</script>
+<script type="text/javascript">
+	theDate.max = new Date().toISOString().split("T")[0];
+</script>
+
+<script type="text/javascript">
+var date = new Date();
+
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+
+var today = year + "-" + month + "-" + day;
+document.getElementById("theDate").value = today;
+</script>
+		<br>
+		<br>
+      <label for="batch" style="margin-left: 10px;color: #FFFFF0">Batch : <span style="color: #FF6347">*</span></label>
+    <label for="6" style="margin-left: 10px;color: #FFFFF0">6-7AM:</label>
+		<input id="6" type="radio" name="batchchoice" value="Morning-1">
+		<label for="7" style="margin-left: 10px;color: #FFFFF0">7-8AM:</label>
+		<input id="7" type="radio" name="batchchoice" value="Morning-2">
+		<label for="8" style="margin-left: 10px;color: #FFFFF0">8-9AM:</label>
+		<input id="8" type="radio" name="batchchoice" value="Morning-3">
+		<label for="5" style="margin-left: 10px;color: #FFFFF0">5-6PM:</label>
+		<input id="5" type="radio" name="batchchoice" value="Evening-1">
+		<br>
+		<br>
+<!-- USERNAME INFO -->
+
+<!-- MAIL INFO -->
+		<label for="email" style="margin-left: 10px;;color: #FFFFF0">Email: <span style="color: #FF6347">*</span></label><br>
+		<input id="email" type="email" name="mail" style="border: solid 1px;margin-left: 10px;width: 400px;" placeholder="example@anymail.com" required>
+		<br>
+		<br>
+
+		<label for="payment" style="margin-left: 10px;color: #FFFFF0">Do payment of Rs 500: <span style="color: #FF6347">*</span></label>
+			<label for="male" style="margin-left: 10px;color: #FFFFF0">Sucess:</label>
+			<input id="success" type="radio" name="paychoice" value="1">
+			<label for="female" style="margin-left: 10px;color: #FFFFF0">Fail:</label>
+			<input id="fail" type="radio" name="paychoice" value="0">
+			<br>
+			<br>
+<!-- required title="5 to 10 characters" pattern=".{5,10}" to set the lenght of the input password box min 5 chars, max 10 chars and display the message you want "5 to 10 characters" -->
+<!-- PASSWORD INFO -->
+
+<!-- AGREEMENT INFO -->
+		<label for="agree-terms" style="margin-left: 10px;color: #FFFFF0">I agree to the terms and conditions</label>
+		<input id="agree-terms" type="checkbox" name="agree-terms"><br>
+<!-- style="font-size: 100%" changes the size of the paragraph -->
+		<p style="font-size: 90%; color: #FFFFF0; margin-left: 10px">(<span style="color: #FF6347">*</span>): Required fields</p>
+		<br>
+<!-- SUBMIT AND RESET INFO -->
+		<label for="submit"></label>
+		<input id="submit" type="submit" style="margin-left: 10px" name="submit">
+<!-- type="reset" to clear all the fields of text -->
+
+	</form>
+</body>
+</html>
