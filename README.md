@@ -13,7 +13,7 @@ same month they need to be in same batch
 MongoDB
 ![Screenshot (986)](https://user-images.githubusercontent.com/84660766/215493418-81b504c7-a9bd-4d40-83a2-db980e876714.png)
 ![Screenshot (987)](https://user-images.githubusercontent.com/84660766/215493442-6b30017a-ef33-408b-8fbe-5388bb4b9380.png)
-# TechStak
+# Tech Stack
 Html, Css, Bootstrap, Ejs, Node.js, Express.js, MongoDB
 # Try it
 https://yogaguru.onrender.com
